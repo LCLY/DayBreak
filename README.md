@@ -1,7 +1,6 @@
 # HomelessApp
 
-## **Crossing State Street**
-Social Entrepreneurship Competition
+## **Crossing State Street** - Social Entrepreneurship Competition
 
 ### Mission
 
