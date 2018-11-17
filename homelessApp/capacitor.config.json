@@ -1,0 +1,6 @@
+{
+  "appId": "com.example.com",
+  "appName": "homelessApp",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
