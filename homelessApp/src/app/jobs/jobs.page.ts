@@ -6,16 +6,9 @@ import { Component, ViewChild } from "@angular/core";
 	styleUrls: ["jobs.page.scss"],
 })
 export class JobsPage {
-	items = [
-		"Star Fox",
-		"Tetris",
-		"Donkey Kong III",
-		"GoldenEye 007",
-		"Doom",
-		"Fallout",
-		"GTA",
-		"Halo",
-	];
+	items = ["Star Fox", "Tetris"];
+	items1 = ["Star Fox", "Tetris", "Tetris"];
+	items2 = ["Star Fox", "Tetris", "Tetris"];
 
 	constructor() {}
 

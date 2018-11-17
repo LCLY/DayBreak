@@ -1,16 +1,47 @@
 <ion-header>
 	<ion-toolbar> <ion-title>Jobs</ion-title> </ion-toolbar>
 </ion-header>
-
+<!-- src="../../assets/img/walmart.jpg" -->
 <ion-content>
 	<ion-item *ngFor="let item of items">
-		<ion-img slot="start" src="walmart.jog"> </ion-img>
+		<ion-img
+			slot="start"
+			style="max-width: 100px; max-height: 70px;"
+			src="../../assets/img/walmart.jpg"
+		>
+		</ion-img>
 		<ion-label>
 			<h2>Walmart</h2>
 			<p>
 				Work 3-4 hours klwejrlkwjlkrasnfn asdf aklflr qwhrjqjh
 				erjkhqkjer kjqbwer bqber bqbe rkbqk jerbkk
 			</p>
+		</ion-label>
+	</ion-item>
+	<!-- starbucks -->
+	<ion-item *ngFor="let item of items1">
+		<ion-img
+			slot="start"
+			style="max-width: 90px; max-height: 70px;"
+			src="../../assets/img/starbucks.png"
+		>
+		</ion-img>
+		<ion-label>
+			<h2>Starbucks</h2>
+			<p></p>
+		</ion-label>
+	</ion-item>
+	<!-- Purdue -->
+	<ion-item *ngFor="let item of items2">
+		<ion-img
+			slot="start"
+			style="max-width: 100px; max-height: 70px;"
+			src="../../assets/img/Purdue.png"
+		>
+		</ion-img>
+		<ion-label>
+			<h2>Purdue Football</h2>
+			<p></p>
 		</ion-label>
 	</ion-item>
 </ion-content>
