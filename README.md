@@ -1,6 +1,6 @@
 # HomelessApp
 
-\*\* "Crossing State Street"
+** "Crossing State Street"
 Social Entrepreneurship Competition
 
 ## Mission
@@ -21,7 +21,7 @@ Students Project Purdue University Description Narrative
 
 The concept behind this project you will be creating for the homeless use in Chicago is as follows
 
-### What we know;
+### What we know
 
 There are many services available to the homeless in Chicago including housing assistance, food, case management, food pantries etc.
 
@@ -34,27 +34,3 @@ We want this system to be easily updatable.
 Once a person finds their resource thy need based on their location, would be great to have a way for the homeless person to communicate back to the service provider.
 
 The information would be shown on a map of the city either through a google map etc. When a person is in an area, can the service providers information be displayed automatically or by hovering over the area.
-
-### Information to be stored for each service provider;
-
-Name of agency
-
-Address of where the service is provided
-
-Contact phone number to be a live link to call from the application
-
-Services that are provided, hours of service etc.
-
-Zip Codes where the services are provided (perhaps this would automatically be populated on the map)
-
-The updateable agency information should answer the 5 w’s - who, what, where, when, why.
-
-Who- the name of the agency
-
-What- services provided
-
-Where are these services provided such as community by zip code
-
-When- times of services
-
-Why- what are the services and their descriptions.
