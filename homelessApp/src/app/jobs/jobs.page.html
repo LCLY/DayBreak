@@ -4,7 +4,7 @@
 
 <ion-content>
     <ion-list>
-        <label
+        <button
             ion-item
             *ngFor="let item of items"
             (click)="openNavDetailsPage(item)"
@@ -16,6 +16,6 @@
                 item-start
             ></ion-icon>
             {{ item.title }}
-        </label>
+        </button>
     </ion-list>
 </ion-content>
