@@ -8,62 +8,77 @@
 </ion-header>
 
 <ion-content padding>
-	<ion-item>
-		<ion-avatar
-			style="width:50% !important;  
-		height : 50% !important; "
-			slot="start"
-		>
-			<img src="../../assets/img/user.jpg" />
-		</ion-avatar>
-		<ion-label>
-			<h2>Marty McFly</h2>
-			<p>I'm a big deal</p>
-		</ion-label>
-	</ion-item>
-	<ion-grid>
-		<ion-row>
-			<ion-item>
-				<ion-col>
-					<h3>Jobs Applied</h3>
-					<p>1. first Job</p>
-					<p>2. second Job</p>
-					<p>3. third Job</p>
+	<!-- Picture -->
+	<ion-card>
+		<img
+			id="userpic"
+			style="align-content:center"
+			src="../../assets/img/userprofile.jpg"
+		/>
 
-					<br />
-				</ion-col>
-			</ion-item>
-			<ion-item>
-				<ion-col>
-					<h3>Event Register</h3>
-					<p>1. Event 1</p>
-					<p>2. Event 2</p>
-					<p>3. Event 3</p>
-					<br />
-				</ion-col>
-			</ion-item>
-		</ion-row>
+		<ion-card-header>
+			<ion-card-title style="text-align: center"
+				>Marty McFly</ion-card-title
+			>
+		</ion-card-header>
+		<h3 style="text-align:center">
+			I am a quick learner and I want to help other homeless people like
+			me
+		</h3>
+	</ion-card>
 
-		<ion-row>
+	<!-- JOB -->
+	<ion-card>
+		<ion-item>
 			<ion-col>
-				<ion-row>
-					<ion-col size="7" class="skill"><h3>My Skills</h3></ion-col>
-					<ion-col
-						><ion-badge color="success" style="margin-top:20px;"
-							>3</ion-badge
-						></ion-col
-					>
-				</ion-row>
-				<div class="skillCol">
-					<p>Cooking</p>
-					<p>Serving</p>
-					<p>Woodworking</p>
-				</div>
-				<ion-button expand="full" shape="round" fill="outline"
-					>Add Your Skill</ion-button
-				>
+				<h3>Past Jobs</h3>
+				<p>1. Park Cleaner</p>
+				<p>2. Entertainer</p>
+				<p>3. Walmart Stocker</p>
+
 				<br />
 			</ion-col>
-		</ion-row>
-	</ion-grid>
+		</ion-item>
+	</ion-card>
+	<!-- Event -->
+	<ion-card>
+		<ion-item>
+			<ion-col>
+				<h3>Joined Events</h3>
+				<p>1. Thanksgiving Dinner</p>
+				<p>2. Christmas Parade</p>
+				<p>3. Visit to Art Institue of Chicago</p>
+				<br />
+			</ion-col>
+		</ion-item>
+	</ion-card>
+
+	<!-- SKILL -->
+	<ion-card>
+		<ion-grid>
+			<ion-row>
+				<ion-col>
+					<ion-row>
+						<ion-col size="7" class="skill"
+							><h3>My Skills</h3></ion-col
+						>
+						<ion-col
+							><ion-badge color="success" style="margin-top:20px;"
+								>3</ion-badge
+							></ion-col
+						>
+					</ion-row>
+					<div class="skillCol">
+						<p>Cooking</p>
+						<p>Serving</p>
+						<p>Cleaning</p>
+					</div>
+					<ion-button expand="full" shape="round" fill="outline"
+						>Add Your Skill</ion-button
+					>
+					<br />
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+	</ion-card>
 </ion-content>
