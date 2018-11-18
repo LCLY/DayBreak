@@ -12,7 +12,7 @@ export class HomePage implements OnInit {
 		const alert = await this.alertController.create({
 			header: "DayBreak",
 			subHeader: "Welcome, DayBreaker!",
-			message: "Choose a filter to start using the app",
+			message: "You may start exploring the app by choosing a filter",
 			buttons: ["OK"],
 		});
 
@@ -21,10 +21,47 @@ export class HomePage implements OnInit {
 
 	ngOnInit() {
 		document.getElementById("background").style.filter = "brightness(30%)";
+		document
+			.getElementById("background")
+			.setAttribute("src", "../../assets/img/map/demomap.jpg");
 		this.presentAlert();
 	}
 
 	enable() {
 		document.getElementById("background").style.filter = "brightness(100%)";
+	}
+
+	pizza() {
+		document.getElementById("background").style.filter = "brightness(100%)";
+		document
+			.getElementById("background")
+			.setAttribute("src", "../../assets/img/map/foodmap.jpg");
+	}
+
+	home() {
+		document.getElementById("background").style.filter = "brightness(100%)";
+		document
+			.getElementById("background")
+			.setAttribute("src", "../../assets/img/map/sheltermap.jpg");
+	}
+
+	medkit() {
+		document.getElementById("background").style.filter = "brightness(100%)";
+		document
+			.getElementById("background")
+			.setAttribute("src", "../../assets/img/map/healthmap.jpg");
+	}
+
+	shirt() {
+		document.getElementById("background").style.filter = "brightness(100%)";
+		document
+			.getElementById("background")
+			.setAttribute("src", "../../assets/img/map/shirtmap.jpg");
+	}
+	wifi() {
+		document.getElementById("background").style.filter = "brightness(100%)";
+		document
+			.getElementById("background")
+			.setAttribute("src", "../../assets/img/map/wifimap.jpg");
 	}
 }
