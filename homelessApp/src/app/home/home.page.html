@@ -1,29 +1,33 @@
 <ion-header>
-    <ion-toolbar> <ion-title>Map</ion-title> </ion-toolbar>
+	<ion-toolbar
+		style="background-color: #001b3d; color: white;"
+		color="navbarColor"
+		><ion-title>Map</ion-title>
+	</ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-fab vertical="top" horizontal="end" slot="fixed">
-        <ion-fab-button (click)="enable()">
-            <ion-icon name="arrow-down"></ion-icon>
-        </ion-fab-button>
-        <ion-fab-list side="bottom">
-            <ion-fab-button large
-                ><ion-icon name="pizza"></ion-icon
-            ></ion-fab-button>
-            <ion-fab-button large
-                ><ion-icon name="home"></ion-icon
-            ></ion-fab-button>
-            <ion-fab-button large
-                ><ion-icon name="medkit"></ion-icon
-            ></ion-fab-button>
-            <ion-fab-button large
-                ><ion-icon name="wifi"></ion-icon
-            ></ion-fab-button>
-            <ion-fab-button large
-                ><ion-icon name="shirt"></ion-icon
-            ></ion-fab-button>
-        </ion-fab-list>
-    </ion-fab>
-    <img id="background" src="../../assets/img/demomap.jpg" />
+<ion-content class="backdrop-no-scroll">
+	<ion-fab activated="true" vertical="top" horizontal="end" slot="fixed">
+		<ion-fab-button (click)="enable()">
+			<ion-icon name="arrow-down"></ion-icon>
+		</ion-fab-button>
+		<ion-fab-list side="bottom">
+			<ion-fab-button large (click)="enable()"
+				><ion-icon name="pizza"></ion-icon>
+			</ion-fab-button>
+			<ion-fab-button large (click)="enable()"
+				><ion-icon name="home"></ion-icon>
+			</ion-fab-button>
+			<ion-fab-button large (click)="enable()"
+				><ion-icon name="medkit"></ion-icon>
+			</ion-fab-button>
+			<ion-fab-button large (click)="enable()"
+				><ion-icon name="wifi"></ion-icon>
+			</ion-fab-button>
+			<ion-fab-button large (click)="enable()"
+				><ion-icon name="shirt"></ion-icon>
+			</ion-fab-button>
+		</ion-fab-list>
+	</ion-fab>
+	<img id="background" src="../../assets/img/demomap.jpg" />
 </ion-content>
