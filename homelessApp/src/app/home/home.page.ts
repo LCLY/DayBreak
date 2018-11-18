@@ -1,16 +1,30 @@
 import { Component, OnInit } from "@angular/core";
+import { AlertController } from "@ionic/angular";
 @Component({
-    selector: "app-home",
-    templateUrl: "home.page.html",
-    styleUrls: ["home.page.scss"],
+	selector: "app-home",
+	templateUrl: "home.page.html",
+	styleUrls: ["home.page.scss"],
 })
 export class HomePage implements OnInit {
-    ngOnInit() {
-        document.getElementById("background").style.filter = "brightness(30%)";
-        // document.getElementById("background").style.opacity = "5";
-    }
+	constructor(public alertController: AlertController) {}
 
-    enable() {
-        document.getElementById("background").style.filter = "brightness(100%)";
-    }
+	async presentAlert() {
+		const alert = await this.alertController.create({
+			header: "DayBreak",
+			subHeader: "Welcome, DayBreaker!",
+			message: "Choose a filter to start using the app",
+			buttons: ["OK"],
+		});
+
+		await alert.present();
+	}
+
+	ngOnInit() {
+		document.getElementById("background").style.filter = "brightness(30%)";
+		this.presentAlert();
+	}
+
+	enable() {
+		document.getElementById("background").style.filter = "brightness(100%)";
+	}
 }
