@@ -8,7 +8,15 @@
 </ion-header>
 
 <ion-content>
-	<ion-item *ngFor="let item of items">
+	<ion-item>
+		<ion-label>Sort</ion-label>
+		<ion-select [(ngModel)]="gender">
+			<ion-select-option value="location">Location</ion-select-option>
+			<ion-select-option value="salary">Salary</ion-select-option>
+			<ion-select-option value="alphabet">Alphabetical</ion-select-option>
+		</ion-select>
+	</ion-item>
+	<ion-item>
 		<ion-img
 			slot="start"
 			style="max-width: 80px; max-height: 60px;"
@@ -16,37 +24,104 @@
 		>
 		</ion-img>
 		<ion-label>
-			<h2>Walmart Store Associate</h2>
-			<h3>We are looking for people!!!</h3>
-			<p>20, Nov 2018(Tu) 1500-2000 $12</p>
+			<h2>Walmart Cleaner</h2>
+			<h3>Cleaning, stocking and supplying</h3>
+			<h3>designated facility areas</h3>
+			<h4>4650 W North Ave, Chicago, IL 60639</h4>
+			<p>20, Nov 2018(Tu) $12 per hour</p>
 		</ion-label>
 	</ion-item>
 	<!-- starbucks -->
-	<ion-item *ngFor="let item of items1">
+	<ion-item>
 		<ion-img
 			slot="start"
 			style="max-width: 80px; max-height: 60px;"
-			src="../../assets/img/starbucks.png"
+			src="../../assets/img/mcdonald.png"
 		>
 		</ion-img>
 		<ion-label>
-			<h2>Starbucks Barista</h2>
-			<h3>We want you!!</h3>
-			<p>20, Nov 2018(Tu) 1300-1600 $12</p>
+			<h2>McDonald's team member</h2>
+			<h3>Guest service, food preparation duties</h3>
+			<h4>645 N McClurg Ct, Chicago, IL 60611</h4>
+			<p>20, Nov 2018(Tu) $12 per hour</p>
 		</ion-label>
 	</ion-item>
+
 	<!-- Purdue -->
-	<ion-item *ngFor="let item of items2">
+	<ion-item>
 		<ion-img
 			slot="start"
 			style="max-width: 80px; max-height: 60px;"
-			src="../../assets/img/purdue.png"
+			src="../../assets/img/millenium.jpg"
 		>
 		</ion-img>
 		<ion-label>
-			<h2>Purdue Dining Associate</h2>
-			<h3>It is a long term job!!</h3>
-			<p>20, Nov 2018(Tu) 1300-1700 $12</p>
+			<h2>Park Cleaner</h2>
+			<h3>Maintain cleaniness of Millienium</h3>
+			<h3>Park on weekdays</h3>
+			<h4>201 E Randolph St, Chicago, IL 60602</h4>
+			<p>11, Nov 2018(Su) $12 per hour</p>
+		</ion-label>
+	</ion-item>
+	<ion-item>
+		<ion-img
+			slot="start"
+			style="max-width: 80px; max-height: 60px;"
+			src="../../assets/img/volunteer.png"
+		>
+		</ion-img>
+		<ion-label>
+			<h2>Volunteer Work</h2>
+			<h3>Litter removal, Non-native plant</h3>
+			<h3>species removal</h3>
+			<h4>330 E Monroe St, Chicago, IL 60603</h4>
+			<p>13, Nov 2018(Tu) $12 per hour</p>
+		</ion-label>
+	</ion-item>
+	<ion-item>
+		<ion-img
+			slot="start"
+			style="max-width: 80px; max-height: 60px;"
+			src="../../assets/img/shoeshinner.jpg"
+		>
+		</ion-img>
+		<ion-label>
+			<h2>Shoeshiner</h2>
+			<h3>Cleans and polishes footwear for</h3>
+			<h3>customers</h3>
+			<h4>333 Michigan Avenue, Chicago, IL 60601</h4>
+			<p>11, Nov 2018(Su) $13 per hour</p>
+		</ion-label>
+	</ion-item>
+	<!-- no need edit -->
+	<ion-item>
+		<ion-img
+			slot="start"
+			style="max-width: 80px; max-height: 60px;"
+			src="../../assets/img/walmart.jpg"
+		>
+		</ion-img>
+		<ion-label>
+			<h2>Walmart Stocker</h2>
+			<h3>Loading/unloading shipments, stocking</h3>
+			<h3>shelves</h3>
+			<h4>4626 W Diversey Ave, Chicago, IL 60639</h4>
+			<p>16, Nov 2018(Fr) $14 per hour</p>
+		</ion-label>
+	</ion-item>
+	<ion-item>
+		<ion-img
+			slot="start"
+			style="max-width: 80px; max-height: 60px;"
+			src="../../assets/img/waiter.png"
+		>
+		</ion-img>
+		<ion-label>
+			<h2>Waiter at Flamingo Bar & Grill</h2>
+			<h3>Always smile and serve guests, prefer</h3>
+			<h3>experienced applicants</h3>
+			<h4>440 E Grand Ave, Chicago, IL 60611</h4>
+			<p>11, Nov 2018(Su) $12 per hour</p>
 		</ion-label>
 	</ion-item>
 </ion-content>
