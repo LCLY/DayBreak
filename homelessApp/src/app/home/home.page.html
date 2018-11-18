@@ -6,28 +6,28 @@
 	</ion-toolbar>
 </ion-header>
 
-<ion-content class="backdrop-no-scroll">
+<ion-content>
 	<ion-fab activated="true" vertical="top" horizontal="end" slot="fixed">
 		<ion-fab-button (click)="enable()">
 			<ion-icon name="arrow-down"></ion-icon>
 		</ion-fab-button>
 		<ion-fab-list side="bottom">
-			<ion-fab-button large (click)="enable()"
+			<ion-fab-button large (click)="pizza()"
 				><ion-icon name="pizza"></ion-icon>
 			</ion-fab-button>
-			<ion-fab-button large (click)="enable()"
+			<ion-fab-button large (click)="home()"
 				><ion-icon name="home"></ion-icon>
 			</ion-fab-button>
-			<ion-fab-button large (click)="enable()"
+			<ion-fab-button large (click)="medkit()"
 				><ion-icon name="medkit"></ion-icon>
 			</ion-fab-button>
-			<ion-fab-button large (click)="enable()"
+			<ion-fab-button large (click)="wifi()"
 				><ion-icon name="wifi"></ion-icon>
 			</ion-fab-button>
-			<ion-fab-button large (click)="enable()"
+			<ion-fab-button large (click)="shirt()"
 				><ion-icon name="shirt"></ion-icon>
 			</ion-fab-button>
 		</ion-fab-list>
 	</ion-fab>
-	<img id="background" src="../../assets/img/demomap.jpg" />
+	<img id="background" src="../../assets/img/map/demomap.jpg" />
 </ion-content>
