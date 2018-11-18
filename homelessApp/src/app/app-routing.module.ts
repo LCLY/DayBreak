@@ -7,6 +7,7 @@ const routes: Routes = [
 		path: "jobDetails",
 		loadChildren: "./job-details/job-details.module#JobDetailsPageModule",
 	},
+  { path: 'upcoming-events', loadChildren: './upcoming-events/upcoming-events.module#UpcomingEventsPageModule' },
 ];
 @NgModule({
 	imports: [RouterModule.forRoot(routes)],

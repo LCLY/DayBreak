@@ -1,17 +1,12 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MapComponent } from './map/map.component';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { MapComponent } from "./map/map.component";
 
-const COMPONENTS: any[] =  [
-  MapComponent
-  ]
-];
+const COMPONENTS: any[] = [MapComponent];
 
 @NgModule({
-  declarations: [COMPONENTS],
-  exports: [...COMPONENTS],
-  imports: [
-    CommonModule
-  ]
+	declarations: [COMPONENTS],
+	exports: [...COMPONENTS],
+	imports: [CommonModule],
 })
-export class SharedModule { }
+export class SharedModule {}
