@@ -1,4 +1,4 @@
-# HomelessApp
+# HomelessApp - Ionic App
 
 ## **Crossing State Street** - Social Entrepreneurship Competition
 
