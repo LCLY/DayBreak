@@ -1,4 +1,4 @@
-# HomelessApp - Ionic App
+# DayBreak - Ionic App
 
 ## **Crossing State Street** - Social Entrepreneurship Competition
 
